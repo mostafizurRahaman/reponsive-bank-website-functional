@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Functional Baper Hotel</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body>
+      <header>
+         <h1 class="text-3xl md:text-5xl font-bold text-center mt-4">
+            Functional
+            <span class="text-red-500 font-extrabold"> Baper Bank</span>!!!
+         </h1>
+      </header>
+      <main class="font-mono uppercase font-bold space-y-8 tracking-wider">
+         <section>
+            <div
+               class="container grid grid-cols-1 lg:grid-cols-3 gap-8 w-5/6 mx-auto mt-8"
+            >
+               <div class="bg-red-500 text-center rounded-lg p-10">
+                  <h4 class="text-2xl md:text-4xl text-white">Diposite</h4>
+                  <h2
+                     class="text-white text-2xl md:text-3xl lg:text-5xl font-bold"
+                  >
+                     $ <span id="dipositeTotal">00</span>
+                  </h2>
+               </div>
+               <div class="bg-purple-500 text-center rounded-lg p-10">
+                  <h4 class="text-2xl md:text-4xl text-white">Withdraw</h4>
+                  <h2
+                     class="text-white text-2xl md:text-3xl lg:text-5xl font-bold"
+                  >
+                     $ <span id="withdrawTotal">00</span>
+                  </h2>
+               </div>
+               <div class="bg-blue-500 text-center rounded-lg p-10">
+                  <h4 class="text-2xl md:text-4xl text-white">Balance</h4>
+                  <h2
+                     class="text-white text-2xl md:text-3xl lg:text-5xl font-bold"
+                  >
+                     $ <span id="totalBalance">1000</span>
+                  </h2>
+               </div>
+            </div>
+         </section>
+         <!-- diposite and withdraw -->
+         <section class="mt-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-5/6 mx-auto">
+               <div class="text-center bg-yellow-500 space-y-5 p-8 rounded-xl">
+                  <h2 class="text-3xl md:text-4xl text-white">Diposite Now</h2>
+                  <input
+                     type="text"
+                     id="dipositeField"
+                     class="px-2 py-3 rounded-lg border-0 w-5/6 placeholder:text-sm lg:placeholder:text-xl font-bold"
+                     placeholder="amount you want to diposite:"
+                  />
+                  <button
+                     class="bg-gradient-to-l from-red-500 to-red-400 block px-6 py-3 mx-auto rounded-lg text-base md:text-2xl font-mono font-bold text-white uppercase hover:bg-gradient-to-l hover:from-sky-500 hover:to-sky-300 hover:text-black"
+                     id="dipositeBtn"
+                  >
+                     Diposite
+                  </button>
+               </div>
+               <div class="text-center bg-slate-900 space-y-5 p-8 rounded-xl">
+                  <h2 class="text-3xl md:text-4xl text-white">withdraw now</h2>
+                  <input
+                     type="text"
+                     id="withdrawField"
+                     class="px-2 py-3 rounded-lg border-0 w-5/6 placeholder:text-sm lg:placeholder:text-xl font-bold"
+                     placeholder="amount you want to withdraw:"
+                  />
+                  <button
+                     class="bg-gradient-to-l from-red-500 to-red-400 block px-6 py-3 mx-auto rounded-xl text-base md:text-2xl font-mono font-bold text-white uppercase hover:bg-gradient-to-l hover:from-sky-500 hover:to-sky-300 hover:text-black"
+                     id="withdrawBtn"
+                  >
+                     Withdraw
+                  </button>
+               </div>
+            </div>
+         </section>
+      </main>
+      <script src="js/utilities.js"></script>
+      <script src="js/dipositeWithdraw.js"></script>
+   </body>
+</html>
